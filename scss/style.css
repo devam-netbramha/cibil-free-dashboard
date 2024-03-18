@@ -10089,7 +10089,7 @@ html {
   color: #262626 !important;
   text-decoration: none !important;
   font-family: "Roboto";
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   text-transform: capitalize;
@@ -10169,7 +10169,7 @@ html {
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #004364 !important;
   position: relative;
   display: inline-flex;
@@ -10857,6 +10857,9 @@ input[type=number] {
   color: #fff !important;
 }
 
+.page-background.grey {
+  background-color: #fafafa;
+}
 .page-background.blue {
   background-color: #F6F7FC;
 }
@@ -13848,32 +13851,38 @@ input[type=number] {
   padding-bottom: 10px;
 }
 .upgradePlanPopup .modal-dialog .modal-content .modal-body .reward-points {
-  background: #F9FFED;
-  border: 1px solid #A9D161;
+  background: transparent;
+  border: 1px solid #008A00;
   border-radius: 4px;
   padding: 10px 10px;
   margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
 }
-.upgradePlanPopup .modal-dialog .modal-content .modal-body .reward-points input {
-  background: #2C2C2C;
-  border-radius: 6px;
-  cursor: pointer;
+.upgradePlanPopup .modal-dialog .modal-content .modal-body .reward-points .form-check {
+  padding-left: 0;
+  display: flex;
 }
-.upgradePlanPopup .modal-dialog .modal-content .modal-body .reward-points input[type=checkbox]:checked {
-  accent-color: #262626;
+.upgradePlanPopup .modal-dialog .modal-content .modal-body .reward-points .form-check .custom-checkbox {
+  line-height: 0;
+  padding-top: 6px;
+}
+.upgradePlanPopup .modal-dialog .modal-content .modal-body .reward-points .form-check .custom-checkbox svg {
+  top: 6px;
 }
 .upgradePlanPopup .modal-dialog .modal-content .modal-body .reward-points label {
-  font-weight: 600;
+  font-family: "Roboto";
+  font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  color: #121212;
+  color: #262626;
 }
 .upgradePlanPopup .modal-dialog .modal-content .modal-body .reward-points p {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #121212;
+  color: #262626;
   margin-bottom: 0px;
 }
 .upgradePlanPopup .modal-dialog .modal-content .modal-body span {
@@ -13890,15 +13899,16 @@ input[type=number] {
   line-height: 24px;
 }
 .upgradePlanPopup .modal-dialog .modal-content .modal-body .total {
-  background: #f9f9f9;
+  background: #FAFAFA;
   margin: -20px;
   margin-top: auto;
   padding: 20px 20px 20px 20px;
 }
 .upgradePlanPopup .modal-dialog .modal-content .modal-body .total .payment {
+  font-family: "Roboto";
   width: 100%;
   letter-spacing: 0.02em;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #262626;
@@ -13923,10 +13933,12 @@ input[type=number] {
   text-transform: uppercase;
 }
 .upgradePlanPopup .modal-dialog .modal-content .modal-body .total .reward {
-  color: #3BB012;
+  color: #1D653B;
 }
 .upgradePlanPopup .modal-dialog .modal-content .modal-body .total .grand-total {
   font-size: 16px;
+  font-weight: 700;
+  color: #262626;
   border-top: 1px solid #DDDDDD;
   border-bottom: 1px solid #ACACAC;
 }
@@ -13943,26 +13955,30 @@ input[type=number] {
   justify-content: space-between;
 }
 .upgradePlanPopup .modal-dialog .modal-content .modal-body .total .promo-code .use-code img {
-  padding-right: 10px;
   -o-object-fit: contain;
      object-fit: contain;
   cursor: pointer;
 }
 .upgradePlanPopup .modal-dialog .modal-content .modal-body .total .promo-code .use-code p {
-  font-size: 600;
+  font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  text-decoration-line: underline;
-  color: #2C2C2C;
+  color: #262626;
   margin-bottom: 0px;
+}
+.upgradePlanPopup .modal-dialog .modal-content .modal-body .total .promo-code .use-code p img {
+  max-width: 24px;
+  min-width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
 .upgradePlanPopup .modal-dialog .modal-content .modal-body .total .promo-code .para {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #707070;
-  padding-left: 28px;
+  color: #595959;
+  padding-left: 34px;
   margin-bottom: 0px;
 }
 .upgradePlanPopup .modal-dialog .modal-content .modal-body .total .button-group button {
@@ -13982,9 +13998,6 @@ input[type=number] {
 .upgradePlanPopup .modal-dialog .modal-content .modal-body .coupon-discount td:last-child span {
   font-weight: 400;
 }
-.upgradePlanPopup .modal-dialog .modal-content .modal-body .subtotal {
-  border-top: 1px solid #dddddd;
-}
 .upgradePlanPopup .modal-dialog .modal-content .modal-body .plan-name {
   font-family: "Intro";
   letter-spacing: 0.02em;
@@ -14001,7 +14014,6 @@ input[type=number] {
   color: #008A00;
 }
 .upgradePlanPopup .modal-dialog .modal-content .modal-body form {
-  background: #fafafa;
   margin: -20px;
   margin-top: 20px;
   padding: 20px;
@@ -14011,6 +14023,14 @@ input[type=number] {
   overflow-y: auto;
 }
 
+#couponForm .input-icons-wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#couponForm .input-icons-wraper input {
+  max-width: 75%;
+}
 #couponForm .button-group button {
   width: 100%;
 }
@@ -14681,10 +14701,13 @@ input[type=number] {
 .ce-blog-card {
   border-radius: 4px;
   overflow: hidden;
-  background: #f9f9f9;
+  background: #fff;
   border: 1px solid #dddddd;
 }
 
+.ce-video-cta {
+  background-color: #f9f9f9;
+}
 .ce-video-cta__wraper .cta-thumbnail {
   height: 133px;
   width: 100%;
@@ -19549,12 +19572,14 @@ input[type=number] {
   padding: 14px 0 27px;
   display: flex;
   overflow: hidden;
+  margin-bottom: 0;
 }
 .loan-offers-tabs .loanTabs .report-nav-item {
   flex: 1;
   display: flex;
   justify-content: center;
   position: relative;
+  margin-bottom: 0;
 }
 @media (max-width: 991.98px) {
   .loan-offers-tabs .loanTabs .report-nav-item {
@@ -19572,6 +19597,8 @@ input[type=number] {
   line-height: 20px;
   padding: 0 10px;
   text-transform: capitalize;
+  border: none;
+  background-color: transparent;
 }
 .loan-offers-tabs .loanTabs .report-nav-item button.active {
   font-weight: 700;
@@ -19628,6 +19655,47 @@ input[type=number] {
   .loan-offers-tabs .loanTabs .report-nav-item button.active::before {
     top: calc(100% + 2px);
   }
+}
+.loan-offers-tabs .report-select-group {
+  display: none;
+  width: 100%;
+  max-width: 100%;
+}
+.loan-offers-tabs .report-select-group .report-select-tab .custom-select-value {
+  background: #f1f6ff !important;
+  border-radius: 8px;
+  padding: 19px 16px !important;
+  border: 1px solid #f1f6ff !important;
+}
+.loan-offers-tabs .report-select-group .report-select-tab .custom-select-value::after {
+  width: 14px;
+  height: 10px;
+  background-image: url(/cibil-dashboard/images/static-images/arrow-fill.svg);
+  right: 20px;
+}
+.loan-offers-tabs .report-select-group .report-select-tab .custom-select-value,
+.loan-offers-tabs .report-select-group .report-select-tab .custom-select-options {
+  font-weight: 700 !important;
+}
+.loan-offers-tabs .report-select-group .report-select-tab .custom-select-value img,
+.loan-offers-tabs .report-select-group .report-select-tab .custom-select-options img {
+  margin-right: 10px;
+}
+.loan-offers-tabs .report-select-group .report-select-tab .custom-select-options {
+  background: #f1f6ff !important;
+  border-radius: 0 0 8px 8px;
+  border-color: #ededed;
+}
+.loan-offers-tabs .report-select-group .report-select-tab .custom-select-options span {
+  padding: 15px 16px;
+}
+.loan-offers-tabs .report-select-group .report-select-tab.opened .custom-select-value {
+  border: 1px solid #ededed !important;
+  border-bottom-color: #f1f6ff !important;
+  border-radius: 8px 8px 0 0;
+}
+.loan-offers-tabs .report-select-group .report-select-tab.opened .custom-select-value::after {
+  transform: translateY(-50%) rotate(180deg);
 }
 .loan-offers-tabs .report-select-group .report-select-tab .custom-select-options span {
   padding: 15px 16px;
@@ -19978,7 +20046,7 @@ input[type=number] {
     bottom: 100%;
     height: 64px;
     border-radius: 0;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -21119,7 +21187,7 @@ b.plus-icon {
 }
 
 .dashboard-article {
-  background: #f6f7fc;
+  background: #fafafa;
   padding-top: 50px;
   padding-bottom: 122px;
 }
@@ -21141,7 +21209,7 @@ b.plus-icon {
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #004364 !important;
   position: relative;
   display: inline-flex;
@@ -21734,7 +21802,7 @@ input[type=range]:focus::-ms-fill-upper {
     background: #f16e00;
     font-size: 14px;
     line-height: 14px;
-    font-weight: 700;
+    font-weight: 500;
     padding-top: 16px;
     padding-bottom: 15px;
     margin-bottom: 0;
@@ -22341,7 +22409,7 @@ input[type=range]:focus::-ms-fill-upper {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(358deg, rgba(241, 246, 255, 0) -1.49%, #F2F6FF 30.01%, #DBE8FF 100%);
+  background: linear-gradient(360deg, rgba(241, 246, 255, 0) -1.49%, rgba(247, 249, 250, 0) -1.48%, #F7F9FA -1.47%, #E6F6FA 100%);
 }
 
 .earnrefer-page-header-section {
@@ -22464,7 +22532,7 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 .invite-your-friends .invite-your-friends-header {
-  background: #E5EDFC;
+  background: #E6F6FA;
   padding: 12px 20px 8px 20px;
   border-radius: 10px;
   border-bottom-left-radius: 0px;
@@ -22476,7 +22544,7 @@ input[type=range]:focus::-ms-fill-upper {
   line-height: 24px;
   margin-bottom: 0px;
   text-transform: uppercase;
-  color: #2C2C2C;
+  color: #262626;
 }
 .invite-your-friends .invite-your-friends-body {
   padding: 20px;
@@ -22507,7 +22575,7 @@ input[type=range]:focus::-ms-fill-upper {
   -webkit-appearance: none;
   width: 16px;
   height: 16px;
-  border: 1px solid #2C2C2C;
+  border: 1px solid #262626;
   border-radius: 50%;
   outline: none;
 }
@@ -22535,7 +22603,7 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 .invite-your-friends .invite-your-friends-body .from-section .phn-numberinput input {
-  color: #2C2C2C;
+  color: #262626;
   width: 100%;
   height: 44px;
   padding-left: 10px;
@@ -22544,16 +22612,16 @@ input[type=range]:focus::-ms-fill-upper {
   font-weight: 400;
 }
 .invite-your-friends .invite-your-friends-body .from-section .phn-numberinput input::-moz-placeholder {
-  color: #2c2c2c;
+  color: #262626;
   font-weight: 400;
 }
 .invite-your-friends .invite-your-friends-body .from-section .phn-numberinput input::placeholder {
-  color: #2c2c2c;
+  color: #262626;
   font-weight: 400;
 }
 .invite-your-friends .invite-your-friends-body .from-section .phn-numberinput input:focus {
   background: white !important;
-  color: #2c2c2c !important;
+  color: #262626 !important;
 }
 .invite-your-friends .invite-your-friends-body .invite-btn {
   padding-top: 30px;
@@ -22593,7 +22661,7 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 .invite-your-friends .invite-your-friends-body .your-referral-code {
-  background: #00a6ca;
+  background: #004364;
   width: 95%;
   border-radius: 10px;
   margin-top: 30px;
@@ -22634,7 +22702,7 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 .invite-your-friends .invite-your-friends-body .your-referral-code .your-referral-code-body h6 {
-  font-family: "Intro";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -22672,7 +22740,7 @@ input[type=range]:focus::-ms-fill-upper {
   border-radius: 3px;
   padding: 2px 5px;
   background: none;
-  font-family: "Intro";
+  font-family: "Roboto";
   color: white;
   font-weight: 400;
   font-size: 14px;
@@ -22712,10 +22780,11 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 .invite-your-friends .share-code-via h4 {
-  color: #2C2C2C;
-  font-size: 16px;
+  color: #262626;
+  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.02em;
+  font-family: "Roboto";
   font-weight: 700;
 }
 .invite-your-friends .share-code-via .share-code-via-img a:hover {
@@ -22764,7 +22833,7 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 .your-wallet .your-wallet-card .your-wallet-card-header {
-  background: #E5EDFC;
+  background: #E6F6FA;
   padding: 12px 20px;
 }
 .your-wallet .your-wallet-card .your-wallet-card-header h2 {
@@ -22776,7 +22845,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  color: #2C2C2C;
+  color: #262626;
   margin-bottom: 0px;
 }
 .your-wallet .your-wallet-card .your-wallet-card-header h2 img {
@@ -22789,15 +22858,15 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .your-wallet .your-wallet-card .your-wallet-body h1 {
   font-family: "Intro";
-  font-weight: 700;
+  font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #00A6CA;
+  color: #004364;
   margin-bottom: 0px;
 }
 .your-wallet .your-wallet-card .your-wallet-body h6 {
-  font-family: "Intro";
-  color: #2C2C2C;
+  font-family: "Roboto";
+  color: #262626;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -22809,12 +22878,17 @@ input[type=range]:focus::-ms-fill-upper {
 .your-wallet .your-wallet-card .your-wallet-body .under-line {
   width: 100%;
 }
+.your-wallet .your-wallet-card .your-wallet-body .reward-point-used {
+  border-top: 1px solid #D9D9D9;
+  padding-top: 24px;
+  margin-top: 24px;
+}
 .your-wallet .your-wallet-card .your-wallet-body .reward-point-used h1 {
   font-family: "Intro";
-  font-weight: 700;
+  font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: black;
+  color: #262626;
   margin-bottom: 0px;
 }
 .your-wallet .your-wallet-card .your-wallet-body .reward-point-used h6 {
@@ -22823,21 +22897,12 @@ input[type=range]:focus::-ms-fill-upper {
 .your-wallet .your-wallet-card .your-wallet-body .reward-point-used h6 img {
   margin-left: 10px;
 }
-.your-wallet .your-wallet-card .your-wallet-body .reward-point-used button {
+.your-wallet .your-wallet-card .your-wallet-body .reward-point-used .cibil-button {
   margin-top: 20px;
-  background: #F16E00;
-  color: #2C2C2C;
-  border-radius: 25px;
-  font-family: "Intro";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  padding: 16px 31px;
-  border: none;
+  width: 100%;
 }
 @media (max-width: 767px) {
-  .your-wallet .your-wallet-card .your-wallet-body .reward-point-used button {
-    width: 100%;
+  .your-wallet .your-wallet-card .your-wallet-body .reward-point-used .cibil-button {
     margin-top: 30px;
   }
 }
@@ -22854,7 +22919,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2C2C2C;
+  color: #262626;
   margin-bottom: 5px;
   margin-top: 4px;
 }
@@ -22864,7 +22929,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2C2C2C;
+  color: #262626;
 }
 .your-wallet .criteria-referrals {
   margin-top: 20px;
@@ -22892,7 +22957,7 @@ input[type=range]:focus::-ms-fill-upper {
   line-height: 24px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #2C2C2C;
+  color: #262626;
 }
 @media (max-width: 767px) {
   .your-wallet .criteria-referrals h2 {
@@ -22926,7 +22991,7 @@ input[type=range]:focus::-ms-fill-upper {
   letter-spacing: 0.02em;
   border: 1px solid #F16E00;
   background: #F16E00;
-  color: #2C2C2C;
+  color: #262626;
   border-radius: 25px;
   padding: 15px 20px;
   margin-top: 9px;
@@ -22976,7 +23041,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .get-your-reward-bg {
-  background: #FEFBE9;
+  background: #FFF9D9;
   margin-bottom: 60px;
 }
 @media (max-width: 767px) {
@@ -22991,6 +23056,12 @@ input[type=range]:focus::-ms-fill-upper {
 @media (max-width: 767px) {
   .referearn-faq-section {
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .referpop .modal-dialog {
+    max-width: 775px;
   }
 }
 
@@ -23261,6 +23332,9 @@ input[type=range]:focus::-ms-fill-upper {
 .subscription-plan-section .subscription-plan-card .subscription-outer-card .subscription-card .subscription-card-body .body-inner {
   padding: 14px 10px;
 }
+.subscription-plan-section .subscription-plan-card .subscription-outer-card .subscription-card .subscription-card-body .body-inner .custom-checkbox {
+  line-height: 0;
+}
 .subscription-plan-section .subscription-plan-card .subscription-outer-card .subscription-card .subscription-card-body .body-inner input[type=checkbox]#checkbox1:checked + span {
   border-color: red;
   background-color: red;
@@ -23371,7 +23445,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .subscription-plan-section .subscription-plan-card .selected-subscription-card .body .subscription-inner-card p {
   margin: 24px 0px 0px 0px;
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -23391,6 +23465,9 @@ input[type=range]:focus::-ms-fill-upper {
   border-radius: 8px;
   padding: 8px 16px;
   margin-top: 16px;
+}
+.subscription-plan-section .subscription-plan-card .otcr-check .custom-checkbox {
+  line-height: 0;
 }
 .subscription-plan-section .subscription-plan-card .otcr-check .right .title {
   color: #000;
@@ -23415,7 +23492,7 @@ input[type=range]:focus::-ms-fill-upper {
   margin-bottom: 0;
   padding: 8px 24px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.28px;
 }
@@ -23481,6 +23558,33 @@ input[type=range]:focus::-ms-fill-upper {
   display: flex;
   text-align: center;
   justify-content: center;
+}
+.subscription-plan-section .price-deatails .price-deatails-card.congratulations {
+  padding: 14px 8px;
+  margin-top: 32px;
+  background-color: #E0F6E9;
+  border: 1px solid #185230;
+  border-radius: 4px;
+  text-align: left;
+  align-items: flex-start;
+}
+.subscription-plan-section .price-deatails .price-deatails-card.congratulations .right {
+  padding-left: 4px;
+}
+.subscription-plan-section .price-deatails .price-deatails-card.congratulations .right .title {
+  font-family: "Intro";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #262626;
+  margin-bottom: 4px;
+}
+.subscription-plan-section .price-deatails .price-deatails-card.congratulations .right .desc {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.14px;
 }
 .subscription-plan-section .price-deatails .price-deatails-card p {
   margin-bottom: 0px;
@@ -23596,7 +23700,7 @@ input[type=range]:focus::-ms-fill-upper {
   border-radius: 25px;
   border: none;
   font-family: "Roboto";
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
@@ -23697,7 +23801,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-family: "Roboto";
   font-size: 14px;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.28px;
   color: #004364;
 }
@@ -23709,7 +23813,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .cibil-page-header-section {
   padding-top: 30px;
-  background: linear-gradient(358deg, rgba(241, 246, 255, 0) -1.49%, #F2F6FF 30.01%, #DBE8FF 100%);
+  background: linear-gradient(360deg, rgba(241, 246, 255, 0) -1.49%, rgba(247, 249, 250, 0) -1.48%, #F7F9FA -1.47%, #E6F6FA 100%);
   border-bottom: none;
   padding-bottom: 80px;
 }
@@ -23735,7 +23839,17 @@ input[type=range]:focus::-ms-fill-upper {
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #2C2C2C;
+  color: #262626;
+}
+.reward-point-section .reward-point-card .your-reward-points p {
+  color: #595959;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  margin-bottom: 24px;
 }
 .reward-point-section .reward-point-card .progress-bars h5 {
   font-family: "Intro";
@@ -23744,17 +23858,17 @@ input[type=range]:focus::-ms-fill-upper {
   line-height: 32px;
   padding-top: 10px;
   letter-spacing: -0.01em;
-  color: #00A6CA;
+  color: #004364;
 }
 .reward-point-section .reward-point-card .progress-bars .progress-track {
-  background: #DDDDDD;
+  background: #E6EDF1;
   border-radius: 11px;
   height: 10px;
   width: 100%;
 }
 .reward-point-section .reward-point-card .progress-bars .progress-track .progress-fill {
   width: 50%;
-  background: #00A6CA;
+  background: #004364;
   border-radius: 11px;
   height: 10px;
 }
@@ -23766,7 +23880,7 @@ input[type=range]:focus::-ms-fill-upper {
   line-height: 14px;
   margin-top: 30px;
   text-decoration-line: underline;
-  color: #2C2C2C;
+  color: #004364;
 }
 .reward-point-section .reward-point-card .progress-bars a img {
   width: 12px;
@@ -23784,26 +23898,41 @@ input[type=range]:focus::-ms-fill-upper {
     display: none;
   }
 }
+.reward-point-section .points-used {
+  border-left: 1px solid #D9D9D9;
+  padding-left: 20px;
+}
 @media (max-width: 767px) {
   .reward-point-section .points-used {
     margin-top: 20px;
   }
 }
 .reward-point-section .points-used h2 {
+  font-family: "Intro";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
   color: #262626;
 }
+.reward-point-section .points-used p {
+  color: #595959;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  margin-bottom: 24px;
+}
 .reward-point-section .points-used h3 {
+  font-family: "Intro";
   font-size: 32px;
   line-height: 44px;
   letter-spacing: -0.01em;
-  color: #2C2C2C;
-  font-weight: 600;
+  color: #262626;
+  font-weight: 400;
 }
 @media (max-width: 991px) {
   .reward-point-section .points-used h3 {
@@ -23824,7 +23953,7 @@ input[type=range]:focus::-ms-fill-upper {
   line-height: 14px;
   margin-top: 40px;
   text-decoration-line: underline;
-  color: #262626;
+  color: #004364;
 }
 .reward-point-section .points-used a img {
   width: 12px;
@@ -23869,7 +23998,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .successfull-referal .custom-table .cibil-table .table-body {
   background: #F6F7FC;
-  color: #2C2C2C;
+  color: #262626;
 }
 .successfull-referal .custom-table .cibil-table .table-body th {
   padding: 14px 16px;
@@ -23920,7 +24049,7 @@ input[type=range]:focus::-ms-fill-upper {
   line-height: 24px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #00A6CA;
+  color: #004364;
   margin-bottom: 20px;
 }
 .table-section .table-wraper .disabled-text {
@@ -23975,7 +24104,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
-  color: #2c2c2c;
+  color: #004364 !important;
   text-decoration-line: underline !important;
   cursor: pointer;
 }
@@ -24042,7 +24171,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2C2C2C;
+  color: #262626;
   margin-bottom: 0px;
   width: 60%;
   word-break: break-all;
@@ -24064,7 +24193,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2C2C2C;
+  color: #262626;
   margin-bottom: 0px;
   width: 40%;
   word-break: break-all;
@@ -24091,7 +24220,7 @@ input[type=range]:focus::-ms-fill-upper {
   margin-top: 10px;
   margin-bottom: 0px;
   font-size: 14px;
-  color: #2C2C2C;
+  color: #262626;
 }
 @media (max-width: 450px) {
   .table-section .cibil-table-sm-container .card p {
