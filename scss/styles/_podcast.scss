@@ -35,6 +35,7 @@
         }
 
         .title {
+          font-family: 'Intro';
           padding-top: 32px;
           font-size: 20px;
           line-height: 28px;
@@ -113,9 +114,10 @@
 
     &--title {
       font-size: 16px;
-      font-weight: $intro-regular;
+      font-weight: $roboto-regular;
       line-height: 24px;
       letter-spacing: 0.32px;
+      color: #262626;
       margin-bottom: 12px;
       padding-bottom: 12px;
       border-bottom: 1px solid #f2f2f2;
@@ -141,6 +143,8 @@
 
           span {
             padding-left: 4px;
+            font-weight: 700;
+            color: $dark-blue;
           }
 
           svg {
@@ -195,7 +199,7 @@
       line-height: 24px;
       letter-spacing: 0.28px;
       text-transform: uppercase;
-      color: $primary-blue;
+      color: $dark-blue;
       margin-bottom: 16px;
     }
   }
@@ -278,10 +282,11 @@
           }
 
           .title {
-            font-size: 20px;
-            line-height: 30px;
-            font-weight: 600;
-            color: #2c2c2c;
+            font-family: 'Intro';
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 400;
+            color: #262626;
             margin-bottom: 8px;
           }
 

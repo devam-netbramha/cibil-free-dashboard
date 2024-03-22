@@ -9087,7 +9087,7 @@ p {
 }
 @media (min-width: 1200px) {
   .page-container {
-    width: 80%;
+    padding-left: 260px;
   }
 }
 
@@ -9099,9 +9099,12 @@ p {
 
 .nav-container {
   display: block;
-  width: 20%;
   min-width: 260px;
   background-color: #004364;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
 .nav-container .logo-container {
   padding: 60px 0 10px 30px;
@@ -9966,7 +9969,7 @@ html {
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 20px;
 }
 .section-heading + .section-description {
@@ -10044,12 +10047,11 @@ html {
 }
 
 .section-description {
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
 }
 
 .banner-heading {
@@ -10490,12 +10492,11 @@ html {
   padding: 16px 10px 14px 40px;
   position: relative;
   cursor: pointer;
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
 }
 .group.long-radio label::after {
   content: "";
@@ -11506,6 +11507,7 @@ input[type=number] {
 }
 
 .custom-checkbox {
+  line-height: 0;
   position: relative;
   margin: 0 10px 0 0;
   cursor: pointer;
@@ -11589,12 +11591,11 @@ input[type=number] {
   margin-left: 16px;
 }
 .sorting-selector .title {
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   color: #262626;
   padding-left: 4px;
 }
@@ -11624,11 +11625,17 @@ input[type=number] {
   max-width: inherit;
   width: 100%;
 }
+.sorting-list ul li.group + li {
+  margin-top: 24px;
+}
 .sorting-list ul li.group:nth-child(odd) {
   margin-right: 0;
 }
 .sorting-list ul li.group.long-radio {
   margin-bottom: 0;
+}
+.sorting-list ul li.group.long-radio input[type=radio]:checked + label {
+  border: none;
 }
 .sorting-list ul li.group.long-radio input[type=radio]:checked + label::before {
   left: 4px;
@@ -11653,16 +11660,21 @@ input[type=number] {
 .sorting-container .filter-list-container + .filter-list-container {
   margin-top: 32px;
 }
+.sorting-container .filter-list-container .filter-value {
+  display: flex;
+  align-items: center;
+}
 .sorting-container .filter-list-container .filter-value label {
+  font-family: "Roboto";
   cursor: pointer;
   margin-bottom: 0;
 }
 .sorting-container .filter-list-title {
-  font-family: "Intro";
-  font-weight: 600;
+  font-family: "Roboto";
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   margin-bottom: 18px;
   padding-bottom: 8px;
   border-bottom: 1px solid #acacac;
@@ -16869,16 +16881,16 @@ input[type=number] {
   border-radius: 50%;
 }
 .cibil-report-new .report-content .accounts-list-header .title.open {
-  color: #3BB012;
+  color: #008A00;
 }
 .cibil-report-new .report-content .accounts-list-header .title.open::before {
-  background-color: #3BB012;
+  background-color: #008A00;
 }
 .cibil-report-new .report-content .accounts-list-header .title.closed {
-  color: #B01212;
+  color: #B11030;
 }
 .cibil-report-new .report-content .accounts-list-header .title.closed::before {
-  background-color: #B01212;
+  background-color: #B11030;
 }
 .cibil-report-new .report-content .accounts-list-header .tooltip-icon {
   position: relative;
@@ -16893,12 +16905,11 @@ input[type=number] {
 .cibil-report-new .report-content .accounts-list-header .table-tooltip {
   display: none;
   position: absolute;
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   background-color: #fff;
   color: #262626;
   padding: 8px;
@@ -16929,11 +16940,11 @@ input[type=number] {
   width: 100%;
   padding: 0 12px 0 4px;
   color: #595959;
-  font-family: "Intro";
-  font-weight: 600;
+  font-family: "Roboto";
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
 }
 .cibil-report-new .report-content .account-list-heading li p.name {
   max-width: 30%;
@@ -16990,12 +17001,11 @@ input[type=number] {
   width: 100%;
   padding: 0 12px 0 4px;
   color: #262626;
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  letter-spacing: 0.16px;
 }
 .cibil-report-new .report-content .account-list li p.name {
   max-width: 30%;
@@ -17031,12 +17041,11 @@ input[type=number] {
   padding: 4px 12px;
   border-radius: 27px;
   background-color: #E6F6FA;
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   color: #2c2c2c;
   text-align: center;
   white-space: nowrap;
@@ -17147,9 +17156,6 @@ input[type=number] {
 .cibil-report-new .report-content .aSidebar-card .top .bank-logo img {
   width: 100%;
 }
-.cibil-report-new .report-content .aSidebar-card .top .bank-details {
-  padding-left: 22px;
-}
 .cibil-report-new .report-content .aSidebar-card .top .bank-details .name {
   font-family: "Intro";
   font-weight: 700;
@@ -17177,13 +17183,11 @@ input[type=number] {
   margin-bottom: 0;
 }
 .cibil-report-new .report-content .aSidebar-card .top .bank-details .type-chips span {
-  padding-left: 4px;
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   color: #262626;
 }
 .cibil-report-new .report-content .aSidebar-card .bottom {
@@ -17238,12 +17242,11 @@ input[type=number] {
 }
 .cibil-report-new .report-content .aSidebar-card .bottom .tab-content .account-detail-list li span {
   color: #2c2c2c;
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
 }
 .cibil-report-new .report-content .aSidebar-card .bottom .tab-content .account-detail-list li span::last-child {
   text-align: right;
@@ -17261,12 +17264,11 @@ input[type=number] {
   margin-top: 16px;
 }
 .cibil-report-new .report-content .aSidebar-card .bottom .tab-content .account-details-legend li {
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   color: #595959;
   margin-bottom: 0;
 }
@@ -17288,11 +17290,11 @@ input[type=number] {
   flex: 1;
 }
 .cibil-report-new .report-content .aSidebar-alert-flex .right .title {
-  font-family: "Intro";
-  font-weight: 600;
+  font-family: "Roboto";
+  font-weight: 700;
   font-size: 14px;
-  line-height: 24px;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   color: #000;
   margin-bottom: 8px;
 }
@@ -17306,32 +17308,29 @@ input[type=number] {
 .cibil-report-new .report-content .aSidebar-alert-flex .right .remark .label {
   max-width: 28%;
   width: 100%;
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   color: #595959;
 }
 .cibil-report-new .report-content .aSidebar-alert-flex .right .remark .desc {
   max-width: 72%;
   width: 100%;
   color: #262626;
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
 }
 .cibil-report-new .report-content .aSidebar-alert-flex .right .info {
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   color: #262626;
   margin-bottom: 0;
 }
@@ -17339,11 +17338,11 @@ input[type=number] {
   margin-bottom: 4px;
 }
 .cibil-report-new .report-content .aSidebar-alert-flex .right .info span {
-  font-family: "Intro";
-  font-weight: 600;
+  font-family: "Roboto";
+  font-weight: 700;
   font-size: 14px;
-  line-height: 24px;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   color: #EB0000;
 }
 .cibil-report-new .report-select-group {
@@ -17461,9 +17460,6 @@ input[type=number] {
   display: flex;
   justify-content: space-between;
   margin-bottom: 250px;
-}
-.cibil-report-new .report-summary-container .summary-gif {
-  border: 3px solid #dddddd;
 }
 .cibil-report-new .report-summary-container .heading {
   margin-bottom: 20px;
@@ -17681,12 +17677,11 @@ input[type=number] {
 .cibil-report-new .report-table .title-withTooltip .table-tooltip {
   display: none;
   position: absolute;
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   background-color: #fff;
   color: #262626;
   padding: 8px;
@@ -17706,7 +17701,7 @@ input[type=number] {
   line-height: 24px;
   color: #262626;
   font-weight: 700;
-  color: #00A6CA;
+  color: #004364;
   margin-bottom: 16px;
   text-transform: uppercase;
 }
@@ -17768,12 +17763,11 @@ input[type=number] {
 .cibil-report-new .report-table .big-name-flex .title {
   display: flex;
   align-items: center;
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  letter-spacing: 0.16px;
   color: #595959;
   margin-bottom: 0;
 }
@@ -17852,41 +17846,38 @@ input[type=number] {
   margin-top: 16px;
 }
 .cibil-report-new .report-table .table-content .table-item .item-head {
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   color: #595959;
   display: block;
   margin-bottom: 8px;
 }
 .cibil-report-new .report-table .table-content .table-item .item-head.black {
-  font-family: "Intro";
-  font-weight: 600;
+  font-family: "Roboto";
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   color: #262626;
 }
 .cibil-report-new .report-table .table-content .table-item .item-text {
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  letter-spacing: 0.16px;
   color: #262626;
   display: block;
 }
 .cibil-report-new .report-table .table-content .table-item .item-chips {
-  font-family: "Intro";
-  font-weight: 400;
+  font-family: "Roboto";
+  font-weight: 700;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   color: #262626;
   background-color: #F2F2F2;
   padding: 4px 8px;
@@ -18191,12 +18182,11 @@ input[type=number] {
   border-radius: 4px;
 }
 .cibil-report-new .report-enquiry-alert p {
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   margin-bottom: 0;
   color: #262626;
   margin-left: 8px;
@@ -18227,12 +18217,11 @@ input[type=number] {
 .cibil-report-new .report-enquiry-tabs .enquiry-nav-link {
   padding: 4px 8px;
   border-radius: 4px;
-  font-family: "Intro";
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   line-height: 20px;
   color: #595959;
   display: flex;
@@ -18247,6 +18236,7 @@ input[type=number] {
 .cibil-report-new .report-enquiry-tabs .enquiry-nav-link.active {
   background-color: #005F8D;
   color: #fff;
+  font-weight: 700;
 }
 .cibil-report-new .report-enquiry-tabs .enquiry-nav-link.active .number {
   background-color: rgba(255, 255, 255, 0.1);
@@ -18372,15 +18362,15 @@ input[type=number] {
   }
 }
 .cibil-report-new .report-enquiry .enquiry-list-title p {
-  font-family: "Intro";
-  font-weight: 600;
+  font-family: "Roboto";
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  color: #262626;
+  line-height: 20px;
+  letter-spacing: 0.14px;
   font-weight: 700;
-  color: #00A6CA;
+  color: #004364;
   margin-bottom: 0;
-  text-transform: uppercase;
+  text-transform: capitalize;
   width: 100%;
   padding: 0 12px 0 0;
 }
@@ -25258,6 +25248,7 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 .podcast__card.banner .left .title {
+  font-family: "Intro";
   padding-top: 32px;
   font-size: 20px;
   line-height: 28px;
@@ -25328,9 +25319,10 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .podcast__card--title {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
+  color: #262626;
   margin-bottom: 12px;
   padding-bottom: 12px;
   border-bottom: 1px solid #f2f2f2;
@@ -25355,6 +25347,8 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .podcast__card .bottom p.duration span {
   padding-left: 4px;
+  font-weight: 700;
+  color: #004364;
 }
 .podcast__card .bottom p.duration svg {
   width: 24px;
@@ -25400,7 +25394,7 @@ input[type=range]:focus::-ms-fill-upper {
   line-height: 24px;
   letter-spacing: 0.28px;
   text-transform: uppercase;
-  color: #00A6CA;
+  color: #004364;
   margin-bottom: 16px;
 }
 .podcast__chips {
@@ -25478,10 +25472,11 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 .podcast__details-banner .main .right .title {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 600;
-  color: #2c2c2c;
+  font-family: "Intro";
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #262626;
   margin-bottom: 8px;
 }
 .podcast__details-banner .main .right .date {
@@ -25684,4 +25679,202 @@ input[type=range]:focus::-ms-fill-upper {
   to {
     background-position: 0 0;
   }
+}
+.glossary-letter {
+  background-color: #E6F6FA;
+  padding: 16px 0;
+  position: sticky;
+  top: 60px;
+  z-index: 99;
+}
+@media (max-width: 992px) {
+  .glossary-letter {
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    padding: 0;
+  }
+}
+.glossary-letter-title {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+  font-weight: 400;
+  color: #262626;
+  margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+  .glossary-letter-title {
+    display: none;
+  }
+}
+.glossary-letter-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .glossary-letter-flex {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .glossary-letter-flex {
+    background-color: #fff;
+    position: fixed;
+    top: 65px;
+    right: 0;
+    bottom: 0;
+  }
+}
+.glossary-letter-item {
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  font-weight: 400;
+  color: #262626;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .glossary-letter-item {
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 4px;
+    background-color: transparent;
+  }
+}
+.glossary-letter-item:hover {
+  border-color: #00A6CA;
+  color: #00A6CA;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .glossary-letter-item:hover {
+    border-color: transparent;
+  }
+}
+.glossary-letter-item.active {
+  color: #fff;
+  background-color: #00A6CA;
+}
+@media (max-width: 768px) {
+  .glossary-letter-item.active {
+    color: #00A6CA;
+    background-color: transparent;
+  }
+}
+@media (max-width: 768px) {
+  .glossary-letter .page-width {
+    padding: 0;
+  }
+}
+.glossary-letter-label {
+  background-color: #fff;
+  padding: 16px;
+  color: #00A6CA;
+  border-radius: 8px;
+  font-family: "Intro";
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .glossary-letter-label {
+    background-color: transparent;
+    color: #BFBFBF;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    padding: 0;
+  }
+}
+.glossary-card {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+}
+@media (max-width: 768px) {
+  .glossary-card {
+    border-radius: 8px;
+    border: 1px solid #00A6CA;
+  }
+}
+.glossary-card:not(:last-child) {
+  margin-bottom: 16px;
+}
+.glossary-card .title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  color: #262626;
+  margin-bottom: 16px;
+}
+.glossary-card.desc {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+  color: #262626;
+  margin-bottom: 12px;
+}
+.glossary-card table thead td {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+}
+.glossary-card table tr {
+  vertical-align: top;
+}
+.glossary-card table td {
+  padding: 4px 8px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+  color: #141414;
+}
+.glossary-card table td.red {
+  color: #F00;
+}
+.glossary-card ol li {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+  color: #141414;
+  margin: 0;
+  list-style-type: decimal;
+  margin-left: 14px;
+}
+
+@media (max-width: 768px) {
+  .section-letter-scroll {
+    margin-right: 20px;
+  }
+}
+.section-letter-scroll + .section-letter-scroll {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #E6E6E6;
 }/*# sourceMappingURL=style.css.map */

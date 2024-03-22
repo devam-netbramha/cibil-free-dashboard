@@ -1996,18 +1996,18 @@
                     }
 
                     &.open {
-                        color: #3BB012;
+                        color: $tertiary-green;
 
                         &::before {
-                            background-color: #3BB012;
+                            background-color: $tertiary-green;
                         }
                     }
 
                     &.closed {
-                        color: #B01212;
+                        color: $secondary-red;
 
                         &::before {
-                            background-color: #B01212;
+                            background-color: $secondary-red;
                         }
                     }
                 }
@@ -2029,7 +2029,7 @@
                 .table-tooltip {
                     display: none;
                     position: absolute;
-                    @include intro-book-14;
+                    @include roboto-regular-14;
                     background-color: #fff;
                     color: #262626;
                     padding: 8px;
@@ -2062,7 +2062,7 @@
                     width: 100%;
                     padding: 0 12px 0 4px;
                     color: #595959;
-                    @include intro-regular-14;
+                    @include roboto-regular-14;
 
                     &.name {
                         max-width: 30%;
@@ -2128,7 +2128,7 @@
                     width: 100%;
                     padding: 0 12px 0 4px;
                     color: #262626;
-                    @include intro-book-16;
+                    @include roboto-regular-16;
 
                     &.name {
                         max-width: 30%;
@@ -2160,7 +2160,7 @@
                             padding: 4px 12px;
                             border-radius: 27px;
                             background-color: #E6F6FA;
-                            @include intro-book-14;
+                            @include roboto-regular-14;
                             color: #2c2c2c;
                             text-align: center;
                             white-space: nowrap;
@@ -2286,7 +2286,7 @@
                         }
 
                         &-details {
-                            padding-left: 22px;
+                            // padding-left: 22px;
 
                             .name {
                                 @include intro-bold-16;
@@ -2309,8 +2309,7 @@
                                 margin-bottom: 0;
 
                                 span {
-                                    padding-left: 4px;
-                                    @include intro-book-14;
+                                    @include roboto-regular-14;
                                     color: #262626;
                                 }
                             }
@@ -2381,7 +2380,7 @@
 
                                 span {
                                     color: #2c2c2c;
-                                    @include intro-book-14;
+                                    @include roboto-regular-14;
 
                                     &::last-child {
                                         text-align: right;
@@ -2400,7 +2399,7 @@
                             margin-top: 16px;
 
                             li {
-                                @include intro-book-14;
+                                @include roboto-regular-14;
                                 color: #595959;
                                 margin-bottom: 0;
 
@@ -2429,7 +2428,7 @@
                         flex: 1;
 
                         .title {
-                            @include intro-regular-14;
+                            @include roboto-semi-14;
                             color: #000;
                             margin-bottom: 8px;
                         }
@@ -2445,7 +2444,7 @@
                             .label {
                                 max-width: 28%;
                                 width: 100%;
-                                @include intro-book-14;
+                                @include roboto-regular-14;
                                 color: #595959;
                             }
 
@@ -2453,12 +2452,12 @@
                                 max-width: 72%;
                                 width: 100%;
                                 color: #262626;
-                                @include intro-book-14;
+                                @include roboto-regular-14;
                             }
                         }
 
                         .info {
-                            @include intro-book-14;
+                            @include roboto-regular-14;
                             color: #262626;
                             margin-bottom: 0;
 
@@ -2467,7 +2466,7 @@
                             }
 
                             span {
-                                @include intro-regular-14;
+                                @include roboto-semi-14;
                                 color: #EB0000;
                             }
                         }
@@ -2623,7 +2622,7 @@
         margin-bottom: 250px;
 
         .summary-gif {
-            border: 3px solid #dddddd;
+            // border: 3px solid #dddddd;
         }
 
         .heading {
@@ -2867,7 +2866,7 @@
             .table-tooltip {
                 display: none;
                 position: absolute;
-                @include intro-book-14;
+                @include roboto-regular-14;
                 background-color: #fff;
                 color: #262626;
                 padding: 8px;
@@ -2885,7 +2884,7 @@
         .table-title {
             @include intro-regular-14;
             font-weight: $intro-bold;
-            color: $primary-blue;
+            color: $dark-blue;
             margin-bottom: 16px;
             text-transform: uppercase;
 
@@ -2940,7 +2939,7 @@
                 .title {
                     display: flex;
                     align-items: center;
-                    @include intro-book-16;
+                    @include roboto-regular-16;
                     color: #595959;
                     margin-bottom: 0;
 
@@ -3030,25 +3029,25 @@
                 }
 
                 .item-head {
-                    @include intro-book-14;
+                    @include roboto-regular-14;
                     color: #595959;
                     display: block;
                     margin-bottom: 8px;
 
                     &.black {
-                        @include intro-regular-14;
+                        @include roboto-regular-14;
                         color: #262626;
                     }
                 }
 
                 .item-text {
-                    @include intro-book-16;
+                    @include roboto-regular-16;
                     color: #262626;
                     display: block;
                 }
 
                 .item-chips {
-                    @include intro-book-14;
+                    @include roboto-semi-14;
                     color: #262626;
                     background-color: #F2F2F2;
                     padding: 4px 8px;
@@ -3412,7 +3411,7 @@
             border-radius: 4px;
 
             p {
-                @include intro-book-14;
+                @include roboto-regular-14;
                 margin-bottom: 0;
                 color: #262626;
                 margin-left: 8px;
@@ -3450,7 +3449,7 @@
                     &-link {
                         padding: 4px 8px;
                         border-radius: 4px;
-                        @include intro-book-14;
+                        @include roboto-regular-14;
                         line-height: 20px;
                         color: #595959;
                         display: flex;
@@ -3464,6 +3463,7 @@
                         &.active {
                             background-color: #005F8D;
                             color: #fff;
+                            font-weight: 700;
 
                             .number {
                                 background-color: rgba(255, 255, 255, 0.10);
@@ -3601,11 +3601,11 @@
                     }
 
                     p {
-                        @include intro-regular-14;
+                        @include roboto-regular-14;
                         font-weight: $intro-bold;
-                        color: $primary-blue;
+                        color: $dark-blue;
                         margin-bottom: 0;
-                        text-transform: uppercase;
+                        text-transform: capitalize;
                         width: 100%;
                         padding: 0 12px 0 0;
 

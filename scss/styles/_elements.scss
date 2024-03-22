@@ -4,7 +4,7 @@
   font-weight: $intro-bold;
   font-size: 24px;
   line-height: 24px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 20px;
 
   &+.section-description {
@@ -89,7 +89,7 @@
 }
 
 .section-description {
-  @include intro-book-14;
+  @include roboto-regular-14;
 }
 
 .banner-heading {
@@ -588,7 +588,7 @@
       padding: 16px 10px 14px 40px;
       position: relative;
       cursor: pointer;
-      @include intro-book-14;
+      @include roboto-regular-14;
 
       &::after {
         content: "";
@@ -1758,6 +1758,7 @@ input[type="number"] {
 }
 
 .custom-checkbox {
+  line-height: 0;
   position: relative;
   margin: 0 10px 0 0;
   cursor: pointer;
@@ -1848,7 +1849,7 @@ input[type="number"] {
     }
 
     .title {
-      @include intro-book-14;
+      @include roboto-regular-14;
       color: #262626;
       padding-left: 4px;
     }
@@ -1880,6 +1881,10 @@ input[type="number"] {
           max-width: inherit;
           width: 100%;
 
+          &+li {
+            margin-top: 24px;
+          }
+
           &:nth-child(odd) {
             margin-right: 0;
           }
@@ -1890,6 +1895,8 @@ input[type="number"] {
             input[type="radio"] {
               &:checked {
                 &+label {
+                  border: none;
+
                   &::before {
                     left: 4px;
                   }
@@ -1929,7 +1936,11 @@ input[type="number"] {
         }
 
         .filter-value {
+          display: flex;
+          align-items: center;
+
           label {
+            font-family: 'Roboto';
             cursor: pointer;
             margin-bottom: 0;
           }
@@ -1937,7 +1948,7 @@ input[type="number"] {
       }
 
       &-title {
-        @include intro-regular-14;
+        @include roboto-regular-14;
         margin-bottom: 18px;
         padding-bottom: 8px;
         border-bottom: 1px solid #acacac;

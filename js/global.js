@@ -495,3 +495,37 @@ $(function () {
     }, 100);
   });
 });
+
+
+//glossary letter click
+$('.glossary-letter-item').click(function () {
+  $('.glossary-letter-item').removeClass('active');
+  $(this).addClass('active');
+
+  const url = $(this).text().toLowerCase();
+  let sectionId = document.getElementById("section-letter-" + url);
+  if (sectionId) {
+    let topPos = sectionId.offsetTop - 152;
+    window.scrollTo(0, topPos);
+    // document.body.scrollTop() = topPos;
+  }
+})
+
+let sections = document.querySelectorAll('.section-letter-scroll')
+let sectionLink = document.querySelectorAll('.glossary-letter-item')
+
+window.onscroll = () => {
+  sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 152;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
+
+    if (top  >= offset && top < offset + height) {
+      sectionLink.forEach(links => {
+        links.classList.remove('active');
+        document.querySelector('.glossary-letter-flex a[data-id*=' + id + ']').classList.add('active');
+      })
+    };
+  })
+}
